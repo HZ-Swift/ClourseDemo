@@ -11,7 +11,7 @@ import UIKit
 class CDTableViewController: UIViewController {
 
     fileprivate var cellTitles: [String] {
-        return ["一些基本的用法", "循环引用问题"]
+        return ["一些基本的用法", "循环引用问题", "值捕获"]
     }
     
     fileprivate lazy var tableView: UITableView = {
@@ -29,6 +29,7 @@ class CDTableViewController: UIViewController {
         switch title {
         case "一些基本的用法": vc = CDBasicsViewController()
         case "循环引用问题":   vc = CDCircularReferenceViewController()
+        case "值捕获":   vc = CDValueCaptureViewController()
         default:            vc = CDViewController()
         }
         

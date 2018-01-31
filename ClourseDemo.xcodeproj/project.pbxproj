@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B71610420215CD200D82928 /* CDValueCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71610320215CD200D82928 /* CDValueCaptureViewController.swift */; };
 		0B8CE3C2202014CA003D6BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CE3C1202014CA003D6BBD /* AppDelegate.swift */; };
 		0B8CE3C7202014CA003D6BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8CE3C5202014CA003D6BBD /* Main.storyboard */; };
 		0B8CE3C9202014CA003D6BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8CE3C8202014CA003D6BBD /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B71610320215CD200D82928 /* CDValueCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDValueCaptureViewController.swift; sourceTree = "<group>"; };
 		0B8CE3BE202014CA003D6BBD /* ClourseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClourseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8CE3C1202014CA003D6BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B8CE3C6202014CA003D6BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				0B8CE3D520204255003D6BBD /* CDTableViewController.swift */,
 				0B8CE3D7202042DC003D6BBD /* CDBasicsViewController.swift */,
 				0B8CE3D920207699003D6BBD /* CDCircularReferenceViewController.swift */,
+				0B71610320215CD200D82928 /* CDValueCaptureViewController.swift */,
 				0B8CE3C5202014CA003D6BBD /* Main.storyboard */,
 				0B8CE3C8202014CA003D6BBD /* Assets.xcassets */,
 				0B8CE3CA202014CA003D6BBD /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			files = (
 				0B8CE3C2202014CA003D6BBD /* AppDelegate.swift in Sources */,
 				0B8CE3D620204255003D6BBD /* CDTableViewController.swift in Sources */,
+				0B71610420215CD200D82928 /* CDValueCaptureViewController.swift in Sources */,
 				0B8CE3D8202042DC003D6BBD /* CDBasicsViewController.swift in Sources */,
 				0B8CE3D420201B61003D6BBD /* CDViewController.swift in Sources */,
 				0B8CE3DA20207699003D6BBD /* CDCircularReferenceViewController.swift in Sources */,

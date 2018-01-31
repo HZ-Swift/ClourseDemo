@@ -14,6 +14,8 @@ class CDCircularReferenceViewController: CDViewController {
     
     var closures: ClosuresTwo?
     
+    var nestFuncClosures: (()->(Int))?
+    
     /// 使用懒加载，里面使用self不会引起循环引用
     lazy var contentView: UIView = {
         let cView = UIView()
@@ -39,7 +41,9 @@ class CDCircularReferenceViewController: CDViewController {
         
 //        circularReference1()
 //        self.view.addSubview(self.contentView)
-        self.view.addSubview(self.conView)
+//        self.view.addSubview(self.conView)
+        
+        nestFuncClosures = makeIncrementer(forIncrement: 8)
     }
     
     func circularReference1() {
@@ -57,6 +61,17 @@ class CDCircularReferenceViewController: CDViewController {
         closures = { [unowned self] in
             self.view.backgroundColor = UIColor.red
         }
+    }
+    
+    /// 一个嵌套的方法
+    func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+        var runningTotal = 0
+        func incrementer() -> Int {
+            /// 如果该闭包中使用了self，需要弱引用，因为这个闭包作为了外层方法的返回值，它有可能被赋值给本类的属性
+            runningTotal += amount
+            return runningTotal
+        }
+        return incrementer
     }
 
 }
